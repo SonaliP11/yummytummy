@@ -31,7 +31,7 @@ class Recipe(models.Model):
     ingredients = models.TextField()
     steps = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
-    featured_image = CloudinaryField('image', default='placeholder')
+    featured_image = CloudinaryField('image', default='placeholder')    
     status = models.IntegerField(choices=STATUS, default=0)
     meal_type = models.CharField(max_length=50, choices=MEAL_TYPES, default='breakfast')
     class Meta:
@@ -55,4 +55,4 @@ class Comment(models.Model):
         ordering = ["-created_on"]  
     
     def __str__(self):
-        f"Comment {self.body} by {self.author}"
+        return f"{self.body} by {self.author}"
