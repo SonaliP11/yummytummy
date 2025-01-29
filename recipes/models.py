@@ -1,5 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
+from cloudinary.models import CloudinaryField
+
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
@@ -11,11 +13,11 @@ MEAL_TYPES = (
 )
 
 STAR_RATINGS = (
-        (1, '1 Star'),
-        (2, '2 Stars'),
-        (3, '3 Stars'),
-        (4, '4 Stars'),
-        (5, '5 Stars'),
+        (1, '⭐'),
+        (2, '⭐⭐'),
+        (3, '⭐⭐⭐'),
+        (4, '⭐⭐⭐⭐'),
+        (5, '⭐⭐⭐⭐⭐'),
     )
 
 # Create your models here.
@@ -24,11 +26,12 @@ class Recipe(models.Model):
     Model representing a recipe
     """
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='recipe_owner') 
-    title = models.CharField(max_length=200, unique=True)
-    description = models.TextField()
+    title = models.CharField(max_length=200, unique=True, blank=False, null=False)
+    description = models.TextField(null=False, blank=False)
     ingredients = models.TextField()
     steps = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
+    featured_image = CloudinaryField('image', default='placeholder')
     status = models.IntegerField(choices=STATUS, default=0)
     meal_type = models.CharField(max_length=50, choices=MEAL_TYPES, default='breakfast')
     class Meta:
