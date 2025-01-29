@@ -9,8 +9,9 @@
 </head>
 
 <body>
-    <h1>Recipe list</h1>
+    <h1>Recipes</h1>
     {% for recipe in object_list %}
+    <img src="{{ recipe.featured_image.url }}" class="scale" alt="{{ recipe.title }}">
     <h2>{{recipe.title}}</h2>
     <p>{{recipe.description}}</p>
     <p>Author: {{recipe.author}}</p>
