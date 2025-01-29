@@ -27,6 +27,7 @@ class Recipe(models.Model):
     """
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='recipe_owner') 
     title = models.CharField(max_length=200, unique=True, blank=False, null=False)
+    slug = models.SlugField(max_length=200, unique=True)
     description = models.TextField(null=False, blank=False)
     ingredients = models.TextField()
     steps = models.TextField()
@@ -55,4 +56,4 @@ class Comment(models.Model):
         ordering = ["-created_on"]  
     
     def __str__(self):
-        return f"{self.body} by {self.author}"
+        return f"Comment {self.body} by {self.author}"
