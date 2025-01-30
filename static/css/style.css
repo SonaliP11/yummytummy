@@ -1,5 +1,8 @@
 body {
     background-color: #F9FAFC;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .brand {
@@ -158,4 +161,16 @@ body {
 
 .approval {
     color: rgb(222, 146, 168);
+footer {
+    background-color: #900533;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto;
+    
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
 }
