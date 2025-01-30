@@ -1,4 +1,5 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +21,7 @@
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     {% endblock extra_css %}
     
-    <title>{% block title%}Yummy Tummy{% endblock %}</title>
+    <title>Yummy Tummy {% block title%}{% endblock %}</title>
 
 </head>
 
@@ -29,15 +30,17 @@
 <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="{% url 'home' %}">Yummy Tummy</a>
+          <!--Logo-->
+          <a class="navbar-brand" href="#"><img src="{% static 'images/logo.png' %}" alt="Yummy Tummy Logo" class="logo">Yummy Tummy</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+          <!--Navigation bar items-->
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link {% if request.path == home_url %}active{% endif %}" aria-current="page"
-                            href="#">Home</a>
+                <a class="nav-link active" aria-current="page"
+                            href="{% url 'home' %}">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Chef</a>
@@ -52,6 +55,11 @@
                   <li><a class="dropdown-item" href="#">Dinner</a></li>
                 </ul>
               </li>
+              <!--Form for search bar-->
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary" type="submit">Search</button>
+              </form>
              </ul>
           </div>
         </div>
