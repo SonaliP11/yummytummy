@@ -10,13 +10,13 @@
         <!-- Recipes Entries Column -->
         <div class="col-12 mt-3 left">
             <div class="row">
-                {% for post in post_list %}
+                {% for recipe in recipe_list %}
                 <div class="col-md-4">
                     <div class="card mb-4">
                         <div class="card-body">
                             <div class="image-container">
                                 <div class="image-flash">
-                                    <p class="author">Author: {{ recipe.author }}</p>
+                                    <p class="author">Chef: {{ recipe.author }}</p>
                                 </div>
                             </div>
                             <a href="#" class="recipe-link">
