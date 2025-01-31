@@ -27,31 +27,49 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Navbar */
 .navbar {
-    background-color: #343a40; /* Change this to your desired background color */
-    color: #ffffff; /* Change this to your desired text color */
-    box-shadow: var(--smal-box-shadow);
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
+    position: sticky;
     top: 0;
+    z-index: 1000;
+    box-shadow: var(--smal-box-shadow);
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
-.navbar-custom {
-    color: #3B2F2F;
+/* Navbar Links */
+.navbar a {
+    color: #000;
+    text-decoration: none;
+    padding: 1rem;
 }
 
-.navbar-nav nav-item {
+/* Navbar Links Hover */
+.navbar a:hover {
+    background-color: #DACC3E;
+    cursor: pointer;
+    color: #000;
+}
+
+/* Navbar Links Active Hover */
+.navbar a.active:hover {
+    background-color: #DACC3E;
+    color: #000;
+}
+
+/* Footer */
+footer {
+    flex-shrink: 0;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    padding: 0 1rem;
-    color: #BC2C1A;
+    border-top: var(--border);
+    position: sticky;
+    bottom: 0;
+    width: 100%;
 }
 
-.navbar-nav .nav-item a {
-    color: #ffffff; /* Change this to your desired link color */
+.social-icon {
+    height: 2rem;
+    margin: 1rem;
 }
 
-.navbar-nav .nav-item a:hover {
-    color: #f8f9fa; /* Change this to your desired hover color */
-}
