@@ -55,6 +55,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #000;
 }
 
+
 /* Footer */
 footer {
     flex-shrink: 0;
@@ -68,8 +69,85 @@ footer {
     width: 100%;
 }
 
-.social-icon {
-    height: 5rem;
+/* Recipes */
+
+.card {
+    height: 90%;
+    margin-top: 1rem;
+}
+
+.recipes {
+    text-decoration: none;
+    color: #000;
+}
+
+.recipes:hover {
+    cursor: pointer;
+}
+
+.recipe-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.recipe-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.ingredients, .instructions, .recipe-detail {
+    width: 100%;
+}
+
+.recipe-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipe-pic {
+    width: 25%;
+    height: auto;
+}
+
+.recipe-cont {
+    width: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     margin: 1rem;
+
+}
+
+a.img-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin: 2%;
+    width: 100%;
+    overflow: hidden;
+    text-decoration: none;
+    border: 1px solid var(--border);
+    box-shadow: var(--smal-box-shadow);
+}
+
+a.img-container:hover {
+    color: #DACC3E;
+}
+
+.img-container img {
+    width: 100%;
+    height: auto;
+}
+
+.centered {
+    width: auto;
+    background-color: #000000c9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 

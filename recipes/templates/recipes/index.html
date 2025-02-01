@@ -18,40 +18,54 @@
         </p>
     </section>
 
+
+    <section>
+        <div class="recipe-cont">
+            {% for recipe in recipe_list %} 
+                <a href="{% url 'recipe_detail' recipe.slug %}" class="img-container">
+                    <img src="{{recipe.featured_image.url}}" alt="{{recipe.image_alt}}" style="width: 25%">
+                    <div class="centered"><h2>{{recipe.title}}</h2></div>
+                </a>
+            {% endfor %}
+        </div>
+    </section>
+</div>
+
+
+<!--
+<div class="container mt-5">
     <div class="row">
+        <div class="col-12">
+            <h2 class="text-center">Breakfast Recipes</h2>
+        </div>
+    </div>
+</div>
 
-        <!-- Recipes Entries Column -->
-        <div class="col-12 mt-3 left">
+<div class="row">
+
+     Recipes Entries Column 
+        <div class="col-12 mt-3 left recipe-cont">
             <div class="row">
-                {% for recipe in recipe_list %}
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <div class="image-container">
-                                <div class="image-flash">
-                                    <p class="author">Chef: {{ recipe.author }}</p>
-                                </div>
-                            </div>
-                            <a href="#" class="recipe-link">
-                                <h2 class="card-title">{{ recipe.title }}</h2>
-                                <img src="{{ recipe.featured_image.url }}" class="card-img-top mt-3" alt="{{ recipe.title }}">
-                            </a>
-
-                            <hr />
-                            <p class="card-text text-muted h6">{{ recipe.created_on}}
-                            </p>
-                        </div>
-                    </div>
+            {% for recipe in recipe_list %}
+            <div class="col-md-4">
+                <div class="card mb-4">
+                <div class="card-body">
+                    <a href="{% url 'recipe_detail' recipe.slug %}" class="recipe-link img-container">
+                    <h2 class="card-title centered">{{ recipe.title }}</h2>
+                    <img src="{{ recipe.featured_image.url }}" class="card-img-top mt-3" alt="{{ recipe.title }}" style="width: 100%">
+                    </a>                   
                 </div>
-                {% if forloop.counter|divisibleby:3 %}
+                </div>
+            </div>
+            {% if forloop.counter|divisibleby:3 %}
             </div>
             <div class="row">
-                {% endif %}
-                {% endfor %}
+            {% endif %}
+            {% endfor %}
 
             </div>
         </div>
-    </div>
+</div>
     {% if is_paginated %}
     <nav aria-label="Page navigation">
         <ul class="pagination justify-content-center">
@@ -68,7 +82,8 @@
         </ul>
     </nav>
     {% endif %}
-</div>
+-->
+
 
 <!-- index.html content ends here -->
 {% endblock %}
