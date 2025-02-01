@@ -78,18 +78,26 @@
 	                <a class="nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page" 
                   href="{% url 'account_login' %}">Login</a>
               </li>
-{% endif %}
+              {% endif %}
             </ul>
           </div>
         </div>
       </nav>
-
-    <!-- Main Content -->
-    <main class="container mt-4">
+      
+    <main class="flex-shrink-0 main-bg container mt-4">
+        {% if user.is_authenticated %}
+        <p class="text-end m-3">You are logged in as {{ user.username }}</p>
+        {% else %}
+        <p class="text-end m-3">You are not logged in</p>
+        {% endif %}
+        
         {% block content %}
-        {% endblock %}
+        <!-- Content Goes here -->
+        {% endblock content %}
+
     </main>
 
+    
 <!-- Footer -->
 <footer class="footer mt-auto py-3" style="background-color: #890620;">
     <div class="container">
