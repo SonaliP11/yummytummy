@@ -17,49 +17,30 @@
             bring joy to your tummy. <br><br>Let’s make every meal a delightful experience! 😋🥗🍲
         </p>
     </section>
-
-
-    <section>
-        <div class="recipe-cont">
-            {% for recipe in recipe_list %} 
-                <a href="{% url 'recipe_detail' recipe.slug %}" class="img-container">
-                    <img src="{{recipe.featured_image.url}}" alt="{{recipe.image_alt}}" style="width: 25%">
-                    <div class="centered"><h2>{{recipe.title}}</h2></div>
-                </a>
-            {% endfor %}
-        </div>
-    </section>
 </div>
 
-
-<!--
-<div class="container mt-5">
-    <div class="row">
-        <div class="col-12">
-            <h2 class="text-center">Breakfast Recipes</h2>
-        </div>
-    </div>
-</div>
 
 <div class="row">
-
-     Recipes Entries Column 
+    <!-- Recipes Entries Column -->
         <div class="col-12 mt-3 left recipe-cont">
+            <h2 class="text-center mb-4">Healthy Dishes</h2>
             <div class="row">
             {% for recipe in recipe_list %}
+            {% if recipe.meal_type == 'breakfast' %}
             <div class="col-md-4">
-                <div class="card mb-4">
-                <div class="card-body">
-                    <a href="{% url 'recipe_detail' recipe.slug %}" class="recipe-link img-container">
-                    <h2 class="card-title centered">{{ recipe.title }}</h2>
-                    <img src="{{ recipe.featured_image.url }}" class="card-img-top mt-3" alt="{{ recipe.title }}" style="width: 100%">
-                    </a>                   
-                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">{{ recipe.title }}</h2>
+                    </div>
+                    <a href="{% url 'recipe_detail' recipe.slug %}" class="recipe-link">
+                        <img src="{{ recipe.featured_image.url }}" class="card-img-top" alt="{{ recipe.title }}">
+                    </a>                
                 </div>
             </div>
             {% if forloop.counter|divisibleby:3 %}
             </div>
             <div class="row">
+            {% endif %}
             {% endif %}
             {% endfor %}
 
@@ -82,7 +63,6 @@
         </ul>
     </nav>
     {% endif %}
--->
 
 
 <!-- index.html content ends here -->
