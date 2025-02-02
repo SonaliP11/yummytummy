@@ -37,7 +37,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom " style="background-color: #3F2B56;">
         <div class="container">
           <!--Logo-->
-          <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'images/logo1.png' %}" alt="Yummy Tummy Logo" class="logo" width="90"></a>
+          <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'images/logo.jpeg' %}" alt="Logo" class="logo" width="70"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -48,22 +48,18 @@
                 <a class="nav-link {% if request.path == home_url %}active{% endif %}" aria-current="page"
                             href="{% url 'home' %}">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Recipes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Share Recipe</a>
-              </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Meal-Types
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Breakfast</a></li>
-                  <li><a class="dropdown-item" href="#">Lunch</a></li>
-                  <li><a class="dropdown-item" href="#">Dinner</a></li>
-                </ul>
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" 
+                    aria-expanded="false"> Recipes
+                  </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #F9B114">
+                           <li><a class="dropdown-item" href="#">Breakfast</a></li>
+                            <li><a class="dropdown-item" href="#">Lunch</a></li>
+                           <li><a class="dropdown-item" href="#">Dinner</a></li>
+                      </ul>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
               {% if user.is_authenticated %}
               <li class="nav-item">
 	                <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page" 
@@ -87,8 +83,6 @@
     <main class="flex-shrink-0 main-bg container mt-4">
         {% if user.is_authenticated %}
         <p class="text-end m-3">You are logged in as {{ user.username }}</p>
-        {% else %}
-        <p class="text-end m-3">You are not logged in</p>
         {% endif %}
         
         {% block content %}
