@@ -23,6 +23,13 @@ body {
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--title);
+    color: #2C0703;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2.5rem;
+    
 }
 
 /* Navbar */
@@ -45,7 +52,6 @@ h1, h2, h3, h4, h5, h6 {
 /* Navbar Links Hover */
 .navbar a:hover {
     cursor: pointer;
-    
     color: #000;
 }
 
@@ -136,7 +142,8 @@ footer {
 
 .card-title {
     font-size: 1.8rem;
-    color: #2C0703;
+    background-color: #F9B114;
+    color: #000;
     font-weight: bold;
     justify-content: center;
     display: flex;
