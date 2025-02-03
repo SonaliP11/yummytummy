@@ -62,10 +62,12 @@
                 <!-- We want a for loop inside the empty control tags to iterate through each comment in comments -->
                 {% for comment in comments %}
                 <div class="p-2 comments
-                    {% if not comment.approved and comment.author == user %} faded{% elif not comment.approved %} d-none{% endif %}">
+                    {% if not comment.approved and comment.author == user %}
+                    faded{% elif not comment.approved %}d-none{% endif %}">
                     <p class="font-weight-bold">  
                         {{ comment.author }}
-                        <span class="font-weight-normal">{{ comment.created_on }}</span> wrote:
+                        <span class="font-weight-normal">wrote on - </span>  
+                        {{ comment.created_on }} <strong>:</strong>
                     </p>
                     <div id="comment{{ comment.id }}">
                         {{ comment.body | linebreaks }}
@@ -81,7 +83,7 @@
                     </div>
 
                     {% if not comment.approved and comment.author == user %}
-                    <p class="approval">
+                    <p class="approval" style = "color: #F9B114;">
                         This review is awaiting approval
                     </p>
                     {% endif %}
@@ -101,28 +103,30 @@
                     {{ comment_form | crispy }}
                     {% csrf_token %}
                     <button id="submitButton" type="submit" class="btn btn-signup btn-lg">Submit</button>
+                    <!--
                     <div class="rating">
                         <label>
-                            <input type="radio" name="rating" value="1">
-                            <i class="far fa-star"></i>
+                            <input type="radio" name="rating" value="1"> 1 
+                            <i class="fas fa-star"></i>
                         </label>
                         <label>
-                            <input type="radio" name="rating" value="2">
-                            <i class="far fa-star"></i>
+                            <input type="radio" name="rating" value="2"> 2
+                            <i class="fas fa-star"></i>
                         </label>
                         <label>
-                            <input type="radio" name="rating" value="3">
-                            <i class="far fa-star"></i>
+                            <input type="radio" name="rating" value="3"> 3
+                            <i class="fas fa-star"></i>
                         </label>
                         <label>
-                            <input type="radio" name="rating" value="4">
-                            <i class="far fa-star"></i>
+                            <input type="radio" name="rating" value="4"> 4
+                            <i class="fas fa-star"></i>
                         </label>
                         <label>
-                            <input type="radio" name="rating" value="5">
-                            <i class="far fa-star"></i>
+                            <input type="radio" name="rating" value="5"> 5
+                            <i class="fas fa-star"></i>
                         </label>
                     </div>
+                    -->
                 </form>
                 {% else %}
                 <p>Log in to leave a comment</p>
