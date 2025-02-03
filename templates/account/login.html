@@ -3,18 +3,18 @@
 {% load i18n %}
 {% load account socialaccount %}
 
-{% block head_title %}Sign-in{% endblock %}
+{% block head_title %}{% trans "Sign In" %}{% endblock %}
 
 {% block content %}
 <div class="container mt-4">
     <div class="form-container">
         <div class="row">
             <div class="col-md-8 offset-md-2 text-center">
-                <h3>Sign In</h3>
+                <h3>{% trans "Sign In" %}</h3>
 
-                <p>To leave a review, please log in. <br> If
-                    you have not created an account yet, then <a class="link" href="{{ signup_url }}">Register</a>
-                    first.</p>
+                <p>{% blocktrans %}✨ Sign in to Review ⭐ & Contribute 🍽️🍲. <br><br>
+                    New here? 📝✨ <a class="link" href="{{ signup_url }}">Register first</a> 🍕🍲 
+                   {% endblocktrans %}</p>
             </div>
         </div>
         <div class="row">
