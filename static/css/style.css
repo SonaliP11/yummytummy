@@ -162,10 +162,10 @@ footer {
 }
 
 
-/* Sign-up and Login */
+/* Login */
 .form-container {
     width: 100%;
-    max-width: 500px; /* Set a maximum width for the form container */
+    max-width: 800px; /* Set a maximum width for the form container */
     margin: 3% auto;
     padding: 20px;
     box-shadow: var(--smal-box-shadow);
@@ -185,6 +185,7 @@ footer {
     border-radius: 8px;
 }
 
+/* Register */
 .register-form {
     width: 100%;
     max-width: 800px; /* Set a maximum width for the form container */
@@ -197,6 +198,18 @@ footer {
 }
 
 .btn-signup {
+    background-color: #F9B114;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+/* Signout */
+.btn-signout {
     background-color: #F9B114;
     color: #000;
     font-weight: bold;
