@@ -5,8 +5,8 @@
     --main-font: 'Roboto', serif;
 
     /* Utils */
-    --smal-box-shadow: 1px -1px 5px 0 #00000061;
-    --border: 1px solid #00000030;
+    --smal-box-shadow: 1px -1px 5px 0 #2C0703;
+    --border: 1px solid #2C0703;
 }
 
 /* Body */
@@ -23,6 +23,13 @@ body {
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--title);
+    color: #2C0703;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2.5rem;
+    
 }
 
 /* Navbar */
@@ -45,7 +52,6 @@ h1, h2, h3, h4, h5, h6 {
 /* Navbar Links Hover */
 .navbar a:hover {
     cursor: pointer;
-    
     color: #000;
 }
 
@@ -55,8 +61,9 @@ h1, h2, h3, h4, h5, h6 {
     
 }
 
-
-
+.dropdown-menu {
+    background-color: #F9B114;
+}
 
 /* Footer */
 footer {
@@ -105,7 +112,6 @@ footer {
 
 .recipe-pic {
     width: 100%;
-    height: auto;
     border-radius: 5px;
     box-shadow: var(--smal-box-shadow);
     border-bottom: 4px solid #2C0703;
@@ -126,8 +132,9 @@ footer {
 
 .card-img {
     width: 100%;
-    height: auto;
     border-bottom: 4px solid #2C0703;
+    object-fit: cover;
+    aspect-ratio: 1/1;
 }
 
 .card-body {
@@ -135,9 +142,15 @@ footer {
 }
 
 .card-title {
-    font-size: 1.8rem;
-    color: #2C0703;
+    font-size: 1.5rem;
+    background-color: #F9B114;
+    color: #000;
     font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     justify-content: center;
     display: flex;
     align-self: auto;
@@ -146,4 +159,28 @@ footer {
 .card-text {
     font-size: 1.2rem;
     color: #000;
+}
+
+
+/* Sign-up and Login */
+.form-container {
+    width: 100%;
+    max-width: 500px; /* Set a maximum width for the form container */
+    margin: 3% auto;
+    padding: 20px;
+    box-shadow: var(--smal-box-shadow);
+    border-radius: 8px;
+    border: 1px solid #ccc; /* Add a border around the form container */
+    background-color: #F5F2F2; /* Set a background color for the form container */
+}
+
+.btn-signup {
+    background-color: #F9B114;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 8px;
 }
