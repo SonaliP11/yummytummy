@@ -1,21 +1,15 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic
+from django.contrib import messages
 from .models import Recipe
 from .forms import CommentForm
 
 
 # Create your views here.
 class RecipeList(generic.ListView):
-    model = Recipe  
+    queryset = Recipe.objects.filter(status=1).order_by('-created_on')
     template_name = 'recipes/index.html'
     paginate_by = 9
-    
-    def get_queryset(self):
-        queryset = Recipe.objects.filter(status=1).order_by('-created_on')
-        meal_type = self.kwargs.get('meal_type', None)
-        if meal_type:
-            queryset = queryset.filter(meal_type=meal_type)
-        return queryset
 
 
 def recipe_detail(request, slug):
@@ -45,6 +39,10 @@ def recipe_detail(request, slug):
             comment.author = request.user
             comment.recipe = recipe
             comment.save()
+            messages.add_message(
+                request, messages.SUCCESS,
+                'Comment submitted and awaiting approval'
+            )
 
 
     comment_form = CommentForm()
