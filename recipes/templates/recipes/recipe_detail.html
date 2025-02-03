@@ -101,6 +101,28 @@
                     {{ comment_form | crispy }}
                     {% csrf_token %}
                     <button id="submitButton" type="submit" class="btn btn-signup btn-lg">Submit</button>
+                    <div class="rating">
+                        <label>
+                            <input type="radio" name="rating" value="1">
+                            <i class="far fa-star"></i>
+                        </label>
+                        <label>
+                            <input type="radio" name="rating" value="2">
+                            <i class="far fa-star"></i>
+                        </label>
+                        <label>
+                            <input type="radio" name="rating" value="3">
+                            <i class="far fa-star"></i>
+                        </label>
+                        <label>
+                            <input type="radio" name="rating" value="4">
+                            <i class="far fa-star"></i>
+                        </label>
+                        <label>
+                            <input type="radio" name="rating" value="5">
+                            <i class="far fa-star"></i>
+                        </label>
+                    </div>
                 </form>
                 {% else %}
                 <p>Log in to leave a comment</p>
