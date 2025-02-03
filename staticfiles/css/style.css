@@ -162,10 +162,33 @@ footer {
 }
 
 
-/* Sign-up and Login */
+/* Login */
 .form-container {
     width: 100%;
-    max-width: 500px; /* Set a maximum width for the form container */
+    max-width: 800px; /* Set a maximum width for the form container */
+    margin: 3% auto;
+    padding: 20px;
+    box-shadow: var(--smal-box-shadow);
+    border-radius: 8px;
+    border: 1px solid #ccc; /* Add a border around the form container */
+    background-color: #F5F2F2; /* Set a background color for the form container */
+}
+
+.btn-signin {
+    background-color: #F9B114;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+/* Register */
+.register-form {
+    width: 100%;
+    max-width: 800px; /* Set a maximum width for the form container */
     margin: 3% auto;
     padding: 20px;
     box-shadow: var(--smal-box-shadow);
@@ -184,3 +207,32 @@ footer {
     cursor: pointer;
     border-radius: 8px;
 }
+
+/* Signout */
+.btn-signout {
+    background-color: #F9B114;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+/* Star Rating */
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.rating .fa-star {
+    color: #F9B114; /* Gold color for filled stars */
+    margin-right: 5px;
+}
+
+.rating .fa-star.far {
+    color: #ccc; /* Light grey color for empty stars */
+}
+
+
