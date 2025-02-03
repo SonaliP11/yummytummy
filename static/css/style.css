@@ -220,3 +220,19 @@ footer {
     border-radius: 8px;
 }
 
+/* Star Rating */
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.rating .fa-star {
+    color: #F9B114; /* Gold color for filled stars */
+    margin-right: 5px;
+}
+
+.rating .fa-star.far {
+    color: #ccc; /* Light grey color for empty stars */
+}
+
+
