@@ -208,8 +208,32 @@ footer {
     border-radius: 8px;
 }
 
-/* Signout */
+/* Signout button */
 .btn-signout {
+    background-color: #F9B114;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+/* Edit button */
+.btn-edit {
+    background-color: #F9B114;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+/* Delete button */
+.btn-delete {
     background-color: #F9B114;
     color: #000;
     font-weight: bold;
@@ -256,4 +280,7 @@ footer {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    object-fit: cover; /* Ensure the image fits within the circle */
+    aspect-ratio: 1/1; /* Maintain a 1:1 aspect ratio */
 }
+
