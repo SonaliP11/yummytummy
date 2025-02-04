@@ -247,9 +247,10 @@ footer {
 /* About Page */
 
 .profile-pic {
-    width: 100%;
-    border-radius: 5px;
-    box-shadow: var(--smal-box-shadow);
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; /* Optional: Add rounded corners */
+    box-shadow: var(--smal-box-shadow); /* Optional: Add a shadow */
     border-bottom: 4px solid #2C0703;
     margin: 0 auto;
     display: block;
