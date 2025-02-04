@@ -56,7 +56,8 @@ def recipe_detail(request, slug):
             "recipe": recipe,
             "comments": comments,
             "comment_count": comment_count,
-            "comment_form": comment_form,    
+            "comment_form": comment_form, 
+            "rating_choices": Comment.rating.field.choices,  
          },
         )
 
