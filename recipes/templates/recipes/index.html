@@ -4,6 +4,47 @@
 
 {% block content %}
 
+<!-- Hero Image section-->
+
+<main class="container-fluid p-0">
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="hero-image hero-image-1">
+                    <div class="hero-text text-center">
+                        <h1>Share the Spark, Inspire the World!</h1>
+                        <a href = "{% url 'about' %}" class="btn btn-primary btn-lg">Let's Collaborate</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="hero-image hero-image-2">
+                    <div class="hero-text text-center">
+                        <h1>Your Opinion Matters – Leave a Review!</h1>
+                        <a href="{% url 'account_login' %}" class="btn btn-primary btn-lg">Log-in</Log-in></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="hero-image hero-image-3">
+                    <div class="hero-text text-center text-white">
+                        <h1>Sizzling Success: Chef of the Month!</h1>
+                        <a href="#" class="btn btn-primary btn-lg">Chefs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
 <!-- index.html content starts here -->
 <div class="container flex-column pt-3">
     <section class="text-center">
@@ -107,6 +148,7 @@
     </nav>
     {% endif %}
 
+</main>
 
 
 <!-- index.html content ends here -->
