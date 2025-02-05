@@ -22,7 +22,7 @@ class CollaborateRequest(models.Model):
     description = models.TextField()
     ingredients = models.TextField()
     instructions = models.TextField()
-    recipe_image = CloudinaryField('collaboration_image')
+    recipe_image = CloudinaryField('collaboration_image', default='placeholder')
     read = models.BooleanField(default=False)
 
     def __str__(self):

@@ -286,7 +286,7 @@ footer {
 
 /* Collaborate Form */
 
-.collaborateForm {
+#collaborate {
     width: 100%;
     max-width: 800px; /* Set a maximum width for the form container */
     margin: 3% auto;
