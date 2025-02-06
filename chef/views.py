@@ -2,7 +2,7 @@ from django.shortcuts import render
 from .models import Chef
 
 
-def chef_detail(request):
+def chef_display(request):
     """
     Renders the Chef page
     """
@@ -10,6 +10,6 @@ def chef_detail(request):
 
     return render(
         request,
-        'chef/chef.html',
-        {'chef': chef},
+        "chef/chef.html",
+        {"chef": chef},
     )
