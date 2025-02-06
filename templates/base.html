@@ -54,10 +54,6 @@
                 <a class="nav-link {% if request.path == about_url %}active{%endif%}" aria-current="page"
                   href="{% url 'about' %}">Contact Us</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link {% if request.path == chef_url %}active{%endif%}" aria-current="page"
-                  href="{% url 'chef' %}">Chefs</a
-                >
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -126,9 +122,8 @@
                   <p class="m-0 text-white me-3">Quick Links:</p>
                   <ul class="list-unstyled d-flex mb-0">
                       <li class="me-3"><a href="{% url 'home' %}" class="text-white">Home</a></li>
-                      <li class="me-3"><a href="{% url 'about' %}" class="text-white">About</a></li>
-                      <li class="me-3"><a href="#" class="text-white">Meals</a></li>
-                      <li><a href="#" class="text-white">Contact</a></li>
+                      <li class="me-3"><a href="{% url 'home' %}#breakfast" class="text-white">Meals</a></li>
+                      <li><a href="{% url 'about' %}" class="text-white">Contact Us</a></li>
                   </ul>
               </div>
               <div class="col-md-6 d-flex justify-content-center justify-content-md-end align-items-center">
