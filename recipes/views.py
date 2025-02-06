@@ -10,7 +10,7 @@ from .forms import CommentForm
 class RecipeList(generic.ListView):
     queryset = Recipe.objects.filter(status=1).order_by('-created_on')
     template_name = 'recipes/index.html'
-    paginate_by = 9
+    paginate_by = 12
 
 
 def recipe_detail(request, slug):

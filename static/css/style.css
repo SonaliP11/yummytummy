@@ -358,9 +358,6 @@ footer {
 @media (max-width: 768px) {
     .h2.card-title {
         font-size: 1.5rem; /* Adjust the font size for the card title */
-        color: #000;
-        font-weight: bold;
-        background-color: #F9B114; /* Adjust the background color for the card title */
         align-items: center; /* Center align the text if needed */
         text-align: center; /* Center align the text if needed */
         height: 7vh; /* Adjust the height of the card title */
