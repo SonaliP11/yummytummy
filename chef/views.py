@@ -1,15 +1,15 @@
 from django.shortcuts import render
-from .models import ChefProfile
+from .models import Chef
 
 
 def chef_detail(request):
     """
-    Renders the ChefProfile page
+    Renders the Chef page
     """
-    chef = ChefProfile.objects.all()
+    chef = Chef.objects.all()
 
     return render(
         request,
-        "chef/chef.html",
-        {"chef": chef},
+        'chef/chef.html',
+        {'chef': chef},
     )

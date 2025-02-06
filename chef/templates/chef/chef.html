@@ -2,16 +2,14 @@
 {% block content %}
 {% load static %}
 
-<div class="container mt-5">
+<div class="container mt-4">
     <div class="row">
         <div class="col-4 text-center">
-            <img src="{{ chef.chef_image.url }}" alt="{{ chef.name }}" class="img-fluid chef-pic">
+            <img src="{% static 'images/chef1.jpg' %}" width="75%" />
         </div>
         <div class="col-8">
-            <!-- Title goes between these h2 tags -->
             <h2>{{ chef.name }}</h2>
-            <!-- Content goes directly underneath this -->
-            {{ chef.bio | safe }}
+            <p>{{ chef.bio | safe }}</p>
         </div>
     </div> 
 </div>

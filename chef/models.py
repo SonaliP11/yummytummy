@@ -3,12 +3,11 @@ from cloudinary.models import CloudinaryField
 
 # Create your models here.
 
-class ChefProfile(models.Model):
+class Chef(models.Model):
     name = models.CharField(max_length=100)
-    slug = models.SlugField()
     bio = models.TextField()
-    chef_image = CloudinaryField('chef_image', default='placeholder')
-    interests = models.CharField(max_length=100)
+    profile_image = CloudinaryField('image', null=True, blank=True)
+
     
     def __str__(self):
         return self.name
