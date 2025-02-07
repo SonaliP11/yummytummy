@@ -6,7 +6,7 @@ Yummy Tummy is a delightful recipe suggestion application built with Django and 
 
 We addresses the challenge of meal planning by offering users the option to categorize recipes by meal type (breakfast, lunch, dinner). This feature helps users to relax and plan their meals accordingly, ensuring a well-organized and enjoyable cooking experience.
 
-## UX Design Process
+## User Expereince
 
 Throughout the development of Yummy Tummy, **Agile methodology** was employed to ensure iterative progress and continuous improvement. This approach facilitated regular feedback and allowed for adaptive planning, ultimately leading to a more refined and user-centric application.
 
@@ -37,8 +37,28 @@ Here is the link to my [Project Board](https://github.com/users/SonaliP11/projec
 
 I have implemented all Must-have and Should-have features. Could-have are for future implementations.
 
-![MoSCoW Technique](static/images/moscow.png)
+![MoSCoW Technique](static/images/readme/moscow.png)
 
+## UX Design
+
+### Wireframes
+
+- [Click here for design wireframe](static/images/pup-wireframe.png)
+
+### Color Palette
+-[palette](static/images/readme/color.png)
+
+- #3F2B56 - Navigation and footer background
+- #F9B114 - Background of Buttons and card-title
+- #2C0703 - Heading text and box-shadow
+- #F5F2F2 - Forms background
+- #000000 - Text color
+
+### Typography 
+
+[font style](static/images/readme/fonts.png)
+ - Heading - 'EB Garamond', serif
+ - Body - 'Roboto', serif
 
 
 
