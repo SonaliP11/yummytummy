@@ -54,6 +54,10 @@
                 <a class="nav-link {% if request.path == about_url %}active{%endif%}" aria-current="page"
                   href="{% url 'about' %}">Contact Us</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link {% if request.path == chef_ur %} active{%endif%}" aria-current="page"
+                  href="{% url 'chef' %}">Chefs</a>
+              </li>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">

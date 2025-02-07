@@ -2,15 +2,48 @@ from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic
 from django.contrib import messages
 from django.http import HttpResponseRedirect
+from django.db.models import Count
+from django.contrib.auth.models import User
 from .models import Recipe, Comment
 from .forms import CommentForm
 
 
 # Create your views here.
+
+def chef(request):
+    """
+    Display the chef page.
+
+    **Context**
+
+    ``top_chefs``
+        A list of dictionaries containing the top chefs and their recipe counts.
+
+    **Template:**
+
+    :template:`recipes/chef.html`
+    """
+    recipes = Recipe.objects.values('author__username', 'author__id').annotate(recipe_count=Count('author')).order_by('-recipe_count')[:2]
+
+    top_chefs = []
+
+    for recipe in recipes:
+        user = get_object_or_404(User, id=recipe['author__id'])
+        top_chefs.append({
+            'username': user.username,
+            'recipe_count': recipe['recipe_count'],
+            'recipes': Recipe.objects.filter(author=user)          
+        })
+
+    template_name = 'recipes/chef.html'
+    return render(request, template_name, {"top_chefs": top_chefs})
+
+
 class RecipeList(generic.ListView):
     queryset = Recipe.objects.filter(status=1).order_by('-created_on')
     template_name = 'recipes/index.html'
     paginate_by = 12
+
 
 
 def recipe_detail(request, slug):
