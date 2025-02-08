@@ -48,7 +48,15 @@ I have implemented all Must-have and Should-have features. Could-have are for fu
 
 ### Wireframes
 
-- [Click here for design wireframe](static/images/pup-wireframe.png)
+The wireframes for Yummy Tummy were created using Balsamiq  to create clear, visual layouts of the site's design. While the initial designs provided a solid foundation, some elements evolved during development to enhance the overall user experience. These changes, though different from the original wireframes, resulted in a more polished and user-friendly application.
+
+- [Click here for desktop wireframe](static/images/readme/wireframe-desktop.png)
+- [Click here for tablet wireframe](static/images/readme/wireframe-tablet.png)
+- [Click here for mobile wireframe](static/images/readme/wireframe-mobile.png)
+
+### Logo
+
+-[logo](static/images/readme/logo.jpeg)
 
 ### Color Palette
 -[palette](static/images/readme/color.png)
@@ -67,7 +75,24 @@ I have implemented all Must-have and Should-have features. Could-have are for fu
 
 ## Features
 
+### Authentication
 
+- **Sign-In**: Users can sign in to their accounts to access personalized features such as adding ratings and reviews.
+-[Sign-In](static/images/readme/log-in.png)
+
+- **Register**: New users can register for an account to start collaborating and sharing their recipes.
+
+### Collaboration
+
+- **Share Recipes**: Users can share their own recipes with the community, fostering a collaborative environment.
+- **Write Reviews**: Users can write reviews and rate recipes, helping others to choose the best recipes.
+
+### Links to Features
+
+- [Sign-In](https://yummy-tummy-582bc957dc87.herokuapp.com/signin)
+- [Register](https://yummy-tummy-582bc957dc87.herokuapp.com/register)
+- [Share Recipe](https://yummy-tummy-582bc957dc87.herokuapp.com/share)
+- [Write Review](https://yummy-tummy-582bc957dc87.herokuapp.com/review)
 
 
 
