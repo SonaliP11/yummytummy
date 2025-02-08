@@ -6,6 +6,11 @@ Yummy Tummy is a delightful recipe suggestion application built with Django and 
 
 We addresses the challenge of meal planning by offering users the option to categorize recipes by meal type (breakfast, lunch, dinner). This feature helps users to relax and plan their meals accordingly, ensuring a well-organized and enjoyable cooking experience.
 
+[Live View](https://yummy-tummy-582bc957dc87.herokuapp.com/)
+
+## Responsive
+[Am I Responsive]()
+
 ## User Expereince
 
 Throughout the development of Yummy Tummy, **Agile methodology** was employed to ensure iterative progress and continuous improvement. This approach facilitated regular feedback and allowed for adaptive planning, ultimately leading to a more refined and user-centric application.
@@ -60,6 +65,7 @@ I have implemented all Must-have and Should-have features. Could-have are for fu
  - Heading - 'EB Garamond', serif
  - Body - 'Roboto', serif
 
+## Features
 
 
 

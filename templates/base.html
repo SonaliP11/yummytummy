@@ -51,10 +51,6 @@
                             href="{% url 'home' %}">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link {% if request.path == about_url %}active{%endif%}" aria-current="page"
-                  href="{% url 'about' %}">Contact Us</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link {% if request.path == chef_ur %} active{%endif%}" aria-current="page"
                   href="{% url 'chef' %}">Chefs</a>
               </li>
@@ -69,6 +65,10 @@
                     <li><a class="dropdown-item" href="{% url 'home' %}#dinner">Dinner</a></li>
                 </ul>
             </li>
+              <li class="nav-item">
+                <a class="nav-link {% if request.path == about_url %}active{%endif%}" aria-current="page"
+                  href="{% url 'about' %}">Join Us</a>
+              </li>
               {% if user.is_authenticated %}
               <li class="nav-item">
 	                <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page" 
@@ -123,12 +123,10 @@
       <div class="container">
           <div class="row">
               <div class="col-md-6 d-flex justify-content-center justify-content-md-start align-items-center mb-3 mb-md-0">
-                  <p class="m-0 text-white me-3">Quick Links:</p>
-                  <ul class="list-unstyled d-flex mb-0">
-                      <li class="me-3"><a href="{% url 'home' %}" class="text-white">Home</a></li>
-                      <li class="me-3"><a href="{% url 'home' %}#breakfast" class="text-white">Meals</a></li>
-                      <li><a href="{% url 'about' %}" class="text-white">Contact Us</a></li>
-                  </ul>
+                <ul class="list-unstyled d-flex mb-0">
+                  <li class="me-3"><a href="{% url 'home' %}" class="text-white">Home</a></li>
+                </ul>    
+                <p class="m-0 text-white me-3">Email: contact@yummytummy.com</p>
               </div>
               <div class="col-md-6 d-flex justify-content-center justify-content-md-end align-items-center">
                   <p class="m-0 text-white me-3">Follow us:</p>
