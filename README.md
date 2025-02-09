@@ -50,13 +50,13 @@ I have implemented all Must-have and Should-have features. Could-have are for fu
 
 The wireframes for Yummy Tummy were created using Balsamiq  to create clear, visual layouts of the site's design. While the initial designs provided a solid foundation, some elements evolved during development to enhance the overall user experience. These changes, though different from the original wireframes, resulted in a more polished and user-friendly application.
 
-![Click here for desktop wireframe](static/images/readme/wireframe-desktop.png)
-![Click here for tablet wireframe](static/images/readme/wireframe-tablet.png)
-![Click here for mobile wireframe](static/images/readme/wireframe-mobile.png)
+- [Click here for desktop wireframe](static/images/readme/wireframe-desktop.png)
+- [Click here for tablet wireframe](static/images/readme/wireframe-tablet.png)
+- [Click here for mobile wireframe](static/images/readme/wireframe-mobile.png)
 
 ### Logo
 
-![logo](static/images/readme/logo.jpeg)
+- [logo](static/images/readme/logo.jpeg)
 
 ### Color Palette
 ![palette](static/images/readme/color.png)
@@ -90,4 +90,10 @@ The wireframes for Yummy Tummy were created using Balsamiq  to create clear, vis
 
 - **Write Reviews**: Users can write reviews and rate recipes, helping others to choose the best recipes.
 ![Reviw](static/images/readme/crud-view.png)
+
+### Admin panel Database
+
+The database for Yummy Tummy is designed to efficiently manage and store user data, recipes, comments, and ratings. It uses PostgreSQL, a powerful, open-source relational database system, which ensures data integrity and supports complex queries.
+
+![Admin panel](static/images/readme/admin.png)
 
