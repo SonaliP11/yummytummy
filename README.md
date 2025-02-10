@@ -9,7 +9,8 @@ We addresses the challenge of meal planning by offering users the option to cate
 [Live View](https://yummy-tummy-582bc957dc87.herokuapp.com/)
 
 ## Responsive
-[Am I Responsive]()
+Yummy Tummy is fully responsive, ensuring a seamless experience across various devices, including desktops, tablets, and mobile phones. The design adapts to different screen sizes, providing an optimal viewing experience whether you're at home or on the go.
+[Am I Responsive](static/images/readme/responsive.png)
 
 ## User Expereince
 
