@@ -5,4 +5,5 @@ from django import forms
 class CollaborateForm(forms.ModelForm):
     class Meta:
         model = CollaborateRequest
-        fields = ('name', 'email', 'recipeName', 'description', 'ingredients', 'instructions', 'recipe_image')
+        fields = ('name', 'email', 'recipeName', 'description',
+                  'ingredients', 'instructions', 'recipe_image')

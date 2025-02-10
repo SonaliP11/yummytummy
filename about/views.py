@@ -20,11 +20,10 @@ def about_me(request):
                 'Collaboration request submitted successfully. I endeavour to respond within 2 working days.'
             )
             return redirect('about')
-        
-          
+
     return render(
         request,
         "about/about.html",
         {"about": about,
-        "collaborate_form": collaborate_form },
+         "collaborate_form": collaborate_form},
     )

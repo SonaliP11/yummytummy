@@ -9,4 +9,3 @@ class CommentForm(forms.ModelForm):
         widgets = {
             'rating': forms.RadioSelect(choices=STAR_RATINGS),
         }
-        

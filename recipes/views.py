@@ -17,14 +17,16 @@ def chef(request):
     **Context**
 
     ``top_chefs``
-        A list of dictionaries containing the top chefs and their recipe counts.
+        A list of dictionaries containing the top chefs
+        and their recipe counts.
 
     **Template:**
 
     :template:`recipes/chef.html`
     """
-    recipes = Recipe.objects.values('author__username', 'author__id').annotate(recipe_count=Count('author')).order_by('-recipe_count')[:2]
-
+    recipes = Recipe.objects.values(
+              'author__username', 'author__id').annotate(recipe_count=Count(
+              'author')).order_by('-recipe_count')[:2]
     top_chefs = []
 
     for recipe in recipes:
@@ -32,7 +34,7 @@ def chef(request):
         top_chefs.append({
             'username': user.username,
             'recipe_count': recipe['recipe_count'],
-            'recipes': Recipe.objects.filter(author=user)          
+            'recipes': Recipe.objects.filter(author=user)
         })
 
     template_name = 'recipes/chef.html'
@@ -43,7 +45,6 @@ class RecipeList(generic.ListView):
     queryset = Recipe.objects.filter(status=1).order_by('-created_on')
     template_name = 'recipes/index.html'
     paginate_by = 12
-
 
 
 def recipe_detail(request, slug):
@@ -60,7 +61,6 @@ def recipe_detail(request, slug):
     :template:`recipes/recipe_detail.html`
     """
     template_name = 'recipes/recipe_detail.html'
-    
     queryset = Recipe.objects.filter(status=1)
     recipe = get_object_or_404(queryset, slug=slug)
     comments = recipe.comments.all().order_by("-created_on")
@@ -78,23 +78,23 @@ def recipe_detail(request, slug):
                 'Comment submitted and awaiting approval'
             )
 
-
     comment_form = CommentForm()
 
-
     return render(
-        request, 
-        template_name, 
+        request,
+        template_name,
         {
             "recipe": recipe,
             "comments": comments,
             "comment_count": comment_count,
-            "comment_form": comment_form, 
-            "rating_choices": Comment.rating.field.choices,  
+            "comment_form": comment_form,
+            "rating_choices": Comment.rating.field.choices,
          },
         )
 
+
 def comment_edit(request, slug, comment_id):
+
     """
     view to edit comments
     """
@@ -112,9 +112,10 @@ def comment_edit(request, slug, comment_id):
             comment.save()
             messages.add_message(request, messages.SUCCESS, 'Comment Updated!')
         else:
-            messages.add_message(request, messages.ERROR, 'Error updating comment!')
+            messages.add_message(request, messages.ERROR,
+                                 'Error updating comment!')
 
-    return HttpResponseRedirect(reverse('recipe_detail', args=[slug]))    
+    return HttpResponseRedirect(reverse('recipe_detail', args=[slug]))
 
 
 def comment_delete(request, slug, comment_id):
@@ -129,6 +130,7 @@ def comment_delete(request, slug, comment_id):
         comment.delete()
         messages.add_message(request, messages.SUCCESS, 'Comment deleted!')
     else:
-        messages.add_message(request, messages.ERROR, 'You can only delete your own comments!')
+        messages.add_message(request, messages.ERROR,
+                             'You can only delete your own comments!')
 
     return HttpResponseRedirect(reverse('recipe_detail', args=[slug]))
