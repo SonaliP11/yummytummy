@@ -10,7 +10,7 @@ We addresses the challenge of meal planning by offering users the option to cate
 
 ## Responsive
 Yummy Tummy is fully responsive, ensuring a seamless experience across various devices, including desktops, tablets, and mobile phones. The design adapts to different screen sizes, providing an optimal viewing experience whether you're at home or on the go.
-[Am I Responsive](static/images/readme/responsive.png)
+![Am I Responsive](static/images/readme/responsive.png)
 
 ## User Expereince
 
@@ -81,8 +81,14 @@ The wireframes for Yummy Tummy were created using Balsamiq  to create clear, vis
 - **Sign-In**: Users can sign in to their accounts to access personalized features such as adding ratings and reviews.
 ![Sign-In](static/images/readme/log-in.png)
 
+- **Sign-In Success** : Once log-in, user will see success message.
+![Sign-in success](static/images/readme/login-sucess.png) 
+
 - **Register**: New users can register for an account to start collaborating and sharing their recipes.
 ![Register](static/images/readme/register.png)
+
+- **Sign-out** : Users will be asked as a sure message for sign-out.
+![Sign-out](static/images/readme/sign-out-confirm.png) 
 
 ### Collaboration
 
@@ -91,6 +97,15 @@ The wireframes for Yummy Tummy were created using Balsamiq  to create clear, vis
 
 - **Write Reviews**: Users can write reviews and rate recipes, helping others to choose the best recipes.
 ![Reviw](static/images/readme/crud-view.png)
+
+- **Awaiting approval**: Users will receive apporoval awaiting text.
+![Approval Awaiting](static/images/readme/approval-awaiting.png)
+
+- **Comment Approved**: Admin will approve comment from dashboard.
+![Comment Approved](static/images/readme/comment-approved.png)
+
+- **Comment Updated**: User will be able to see his comment updated.
+![Comment updated](static/images/readme/comment-updated.png)
 
 ### Admin panel Database
 
