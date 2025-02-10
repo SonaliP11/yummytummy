@@ -201,3 +201,19 @@ By organizing the database in this manner, Yummy Tummy ensures data integrity an
 - Please see [TESTING.md](TESTING.md) file for all testing.
 
 
+### AI Assistance in Development
+
+During the development of Yummy Tummy, I strategically used GitHub Copilot to assist in various aspects of the code creation process. They were utilized to enhance productivity and code quality:
+
+- **Code Suggestions**: Copilot helped in writing efficient and error-free code by suggesting relevant code snippets and functions. It also assisted in refining classes and optimizing the CSS for better organization.
+- **Debugging**: I encountered several bugs in the code, which were identified and corrected with the help of AI. Copilot played crucial role to identify and fix issues and semantic errors quickly, ensuring a smooth development process.
+- **Documentation**: AI tools facilitated the creation of comprehensive documentation by generating markdown templates and content suggestions for the website.
+- **Design**: AI-based design tools provided inspiration and suggestions for UI/UX improvements, contributing to a more polished and user-friendly application.
+- **Productivity**: Copilot significantly boosted productivity by automating repetitive tasks and providing intelligent code completions. This allowed me to focus more on the core functionality and design aspects of the application, ultimately leading to a more robust and feature-rich product.
+
+**Reflection**: One of my proudest moments came when I used Copilot to refine the Bootstrap styling. I wasn’t very confident in front-end design, but the AI helped bridge that gap. It suggested small, impactful changes, like improving button alignment and tweaking breakpoints, that made the application feel polished and professional. These adjustments also ensured that the app was truly responsive, which was a priority for me.
+
+#### Overall Impact:
+Working with Copilot transformed my workflow. It allowed me to focus on higher-level decisions while handling repetitive tasks efficiently. However, it wasn’t always perfect—some suggestions required significant tweaking to fit my specific needs. Those moments were valuable reminders that the AI wasn’t a replacement for my skills but a tool to enhance them.
+
+Looking back, I feel this experience not only improved my technical abilities but also my problem-solving skills. It pushed me to articulate my ideas clearly (both to the AI and myself) and made me more mindful of inclusivity and accessibility in software design. Above all, it taught me the importance of embracing new technologies as partners in the creative process.
