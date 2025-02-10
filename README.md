@@ -161,9 +161,10 @@ By organizing the database in this manner, Yummy Tummy ensures data integrity an
 - The website was deployed to Heroku and can be found [here](https://yummy-tummy-582bc957dc87.herokuapp.com/)
 
 ### Heroku
-* Heroku is a cloud platform that lets developers create, deploy, monitor and manage apps.
+- Heroku is a cloud platform that lets developers create, deploy, monitor and manage apps.
 - You will need a Heroku log-in to be able to deploy a website to Heroku.
 - Once you have logged into Heroku:
+
 1. Click 'New' > 'Create new app'
 2. Choose a unique name, choose your region and press 'Create app'
 3. Click on 'Settings' and then 'Reveal Config Vars'
@@ -171,21 +172,21 @@ By organizing the database in this manner, Yummy Tummy ensures data integrity an
 5. Add a key of 'DATABASE_URL' - the value will be the URL you were emailed when creating your database.
 6. Add a key of 'SECRET_KEY' - the value will be any random secret key (google 'secret key generator' and use it to generate a random string of numbers, letters and characters)
 7. In your terminal, type the code you will need to install project requirements:
-- pip3 install gunicorn~=20.1
-- pip3 install -r requirements.txt
-- pip3 freeze --local > requirements.txt
+    - pip3 install gunicorn~=20.1
+    - pip3 install -r requirements.txt
+    - pip3 freeze --local > requirements.txt
 8. Create an 'env.py' file at the root directory which contains the following:
     - import os
     - os.environ["DATABASE_URL"]='CI database URL'
     - os.environ["SECRET_KEY"]=" Your secret key"
-8. Create a file at the root directory called Procfile. In this file enter: "web: gunicorn my_project.wsgi" (without the quotes)
-9. In settings.py, set DEBUG to False. 
-- YOU SHOULD ALWAYS SET DEBUG TO FALSE BEFORE DEPLOYING FOR SECURITY
-10. Add ",'.herokuapp.com' " (without the double quotes) to the ALLOWED_HOSTS list in settings.py
-11. Add, commit and push your code.
-12. Go back to Heroku, click on the 'Deploy' tab.
-13. Connect your project to GitHub.
-14. Scroll to the bottom and click 'Deploy Branch' and your project will be deployed!
+9. Create a file at the root directory called Procfile. In this file enter: "web: gunicorn my_project.wsgi" (without the quotes)
+10. In settings.py, set DEBUG to False. 
+    - YOU SHOULD ALWAYS SET DEBUG TO FALSE BEFORE DEPLOYING FOR SECURITY
+11. Add ",'.herokuapp.com' " (without the double quotes) to the ALLOWED_HOSTS list in settings.py
+12. Add, commit and push your code.
+13. Go back to Heroku, click on the 'Deploy' tab.
+14. Connect your project to GitHub.
+15. Scroll to the bottom and click 'Deploy Branch' and your project will be deployed!
 
 ## Technologies used
 
@@ -196,6 +197,7 @@ By organizing the database in this manner, Yummy Tummy ensures data integrity an
 - GitHub was used to host the repository and version control.
 - Heroku was the hosting platform.
 
-
+## Testing
+- Please see [TESTING.md](TESTING.md) file for all testing.
 
 
