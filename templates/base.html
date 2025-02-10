@@ -1,12 +1,10 @@
 {% load static %}
-
 {% url 'home' as home_url %}
 {% url 'about' as about_url %}
 {% url 'chef' as chef_url %}
 {% url 'account_login' as login_url %}
 {% url 'account_signup' as signup_url %}
 {% url 'account_logout' as logout_url %}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,7 +51,6 @@
               <li class="nav-item">
                 <a class="nav-link {% if request.path == chef_ur %} active{%endif%}" aria-current="page"
                   href="{% url 'chef' %}">Chefs</a>
-              </li>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
