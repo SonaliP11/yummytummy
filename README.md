@@ -87,7 +87,7 @@ The wireframes for Yummy Tummy were created using Balsamiq  to create clear, vis
 - **Register**: New users can register for an account to start collaborating and sharing their recipes.
 ![Register](static/images/readme/register.png)
 
-- **Sign-out** : Users will be asked as a sure message for sign-out.
+- **Sign-out** : In the header, if you are logged in, you can press the 'Logout' button which will take you to the sign-out page.
 ![Sign-out](static/images/readme/sign-out-confirm.png) 
 
 ### Collaboration
@@ -98,13 +98,13 @@ The wireframes for Yummy Tummy were created using Balsamiq  to create clear, vis
 - **Write Reviews**: Users can write reviews and rate recipes, helping others to choose the best recipes.
 ![Reviw](static/images/readme/crud-view.png)
 
-- **Awaiting approval**: Users will receive apporoval awaiting text.
+- **Awaiting approval**: Users will receive apporoval awaiting text after editting their own comment.
 ![Approval Awaiting](static/images/readme/approval-awaiting.png)
 
 - **Comment Approved**: Admin will approve comment from dashboard.
 ![Comment Approved](static/images/readme/comment-approved.png)
 
-- **Comment Updated**: User will be able to see his comment updated.
+- **Comment Updated**: Users will be able to see their comments updated.
 ![Comment updated](static/images/readme/comment-updated.png)
 
 ### Admin panel Database
@@ -112,4 +112,6 @@ The wireframes for Yummy Tummy were created using Balsamiq  to create clear, vis
 The database for Yummy Tummy is designed to efficiently manage and store user data, recipes, comments, and ratings. It uses PostgreSQL, a powerful, open-source relational database system, which ensures data integrity and supports complex queries.
 
 ![Admin panel](static/images/readme/admin.png)
+
+
 
