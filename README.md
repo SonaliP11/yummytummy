@@ -106,10 +106,17 @@ The logo for Yummy Tummy was created by me, reflecting the essence of the applic
 - **Sign-out** : In the header, if you are logged in, you can press the 'Logout' button which will take you to the sign-out page.
 ![Sign-out](static/images/readme/sign-out-confirm.png) 
 
+
+- **Sign-out success** : User will see sign-out message.
+![Sign-out success](static/images/readme/sign-out-success.png)
+
 ### Collaboration
 
-- **Share Recipes**: Users can share their own recipes with the community, fostering a collaborative environment. 
+- **Share Recipes** : Users can share their own recipes with the community, fostering a collaborative environment. 
 ![Join Us](static/images/readme/join-us-form.png)
+
+- **Recipe submitted** : Once, you submit recipe, there will be a pop-up message which acknowledge the submission.
+![Recipe submitted](static/images/readme/request-confirm.png)
 
 - **Write Reviews**: Users can write reviews and rate recipes, helping others to choose the best recipes.
 ![Reviw](static/images/readme/crud-view.png)
@@ -122,6 +129,12 @@ The logo for Yummy Tummy was created by me, reflecting the essence of the applic
 
 - **Comment Updated**: Users will be able to see their comments updated.
 ![Comment updated](static/images/readme/comment-updated.png)
+
+- **Delete Confirmation**: If a user wants to delets his comment, he can but a confirm message will pop up to ask him again to be sure.
+![Delete Confirm](static/images/readme/delete-confirm.png)
+
+- **Comment Deleted** : User will see commment deleted pop up.
+![Comment daleted](static/images/readme/comment-deleted.png)
 
 ### Admin panel Database
 
@@ -157,6 +170,18 @@ By organizing the database in this manner, Yummy Tummy ensures data integrity an
 5. Check your email.
 6. You now have a URL you can use to connect your app to your database.
 
+## Additional Features
+
+- **Home Page** 
+[Home page](static/images/readme/home.png)
+
+- **Chef Page**
+[Chef Page](static/images/readme/chef-page.png)
+
+- **Dishes Page**
+[Dishes page](static/images/readme/dishes.png)
+
+
 ## Deployment
 - The website was deployed to Heroku and can be found [here](https://yummy-tummy-582bc957dc87.herokuapp.com/)
 
@@ -187,6 +212,7 @@ By organizing the database in this manner, Yummy Tummy ensures data integrity an
 13. Go back to Heroku, click on the 'Deploy' tab.
 14. Connect your project to GitHub.
 15. Scroll to the bottom and click 'Deploy Branch' and your project will be deployed!
+
 
 ## Technologies used
 
