@@ -248,6 +248,62 @@ Working with Copilot transformed my workflow. It allowed me to focus on higher-l
 
 Looking back, I feel this experience not only improved my technical abilities but also my problem-solving skills. It pushed me to articulate my ideas clearly (both to the AI and myself) and made me more mindful of inclusivity and accessibility in software design. Above all, it taught me the importance of embracing new technologies as partners in the creative process.
 
+## Frameworks, Libraries & Programs Used
+
+**HTML5**: The standard markup language for creating web pages, providing the structure and content of the site.
+
+**CSS3**: A style sheet language used for describing the presentation of a document written in HTML, enabling responsive and visually appealing designs.
+
+**JavaScript**: A programming language that enables interactive web pages, enhancing user experience with dynamic content and features.
+
+**GitHub**: A platform for version control and collaboration, allowing multiple developers to work on projects simultaneously and manage code changes.
+
+**Heroku**: A cloud platform as a service (PaaS) supporting several programming languages, used for deploying, managing, and scaling web applications.
+
+**Pexels**: A free stock photo and video website, providing high-quality images used within the application for visual enhancement.
+
+**Cloudinary**: Media management service that allows uploading, storing, manipulating, and delivering images and videos.
+
+**Crispy-bootstrap5**: Django package that integrates Django forms with Bootstrap 5, allowing for easy and consistent form rendering.
+
+**Dj-database-url**: Utility for configuring database URLs in Django.
+
+**Dj3-cloudinary-storage**: Django package that integrates Django media storage with the Cloudinary service.
+
+**Django**: High-level web framework for Python that enables rapid and clean development of web applications.
+
+   - **Django-summernote**: WYSIWYG editor based on Summernote for integration with Django.
+  summernote==0.8.20.0
+   - **Django-allauth**: Django application for authentication, registration, and account management.
+  allauth==0.57.2
+   - **Django-crispy-forms**: Django package that makes it easy to create elegant and reusable forms. crispy-forms==2.3
+
+**Gunicorn**: WSGI HTTP server for Python applications, used to deploy Django applications.
+
+**Pillow**: Image processing library for Python.
+
+**Psycopg2**: PostgreSQL database adapter for Python.
+
+**Python3-openid**: Library for supporting the OpenID protocol.
+
+**Tzdata**: Time zone database.
+
+**Whitenoise**: Library for serving static files in Django applications.
+
+**Python**
+   - asgiref==3.8.1
+   - cloudinary==1.41.0
+   - dj-database-url==0.5.0
+   - gunicorn==20.1.0
+   - oauthlib==3.2.2
+   - psycopg==3.2.1
+   - PyJWT==2.9.0
+   - python3-openid==3.2.0
+   - requests-oauthlib==2.0.0
+   - sqlparse==0.5.1
+   - urllib3==1.26.19
+   - whitenoise==5.3.0
+
 ## Future Enhancements
 
 There is significant potential for future enhancements in this project. Some of the possibilities include:
@@ -271,6 +327,7 @@ There is significant potential for future enhancements in this project. Some of 
 - **Mobile App**: Develop a mobile application to provide a more convenient and accessible user experience on smartphones and tablets.
 
 - **Integration with Grocery Delivery Services**: Partner with grocery delivery services to allow users to order ingredients directly from the app.
+
 
 ## Credits
 
