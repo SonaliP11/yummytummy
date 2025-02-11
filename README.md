@@ -106,7 +106,6 @@ The logo for Yummy Tummy was created by me, reflecting the essence of the applic
 - **Sign-out** : In the header, if you are logged in, you can press the 'Logout' button which will take you to the sign-out page.
 ![Sign-out](static/images/readme/sign-out-confirm.png) 
 
-
 - **Sign-out success** : User will see sign-out message.
 ![Sign-out success](static/images/readme/sign-out-success.png)
 
@@ -213,15 +212,6 @@ By organizing the database in this manner, Yummy Tummy ensures data integrity an
 14. Connect your project to GitHub.
 15. Scroll to the bottom and click 'Deploy Branch' and your project will be deployed!
 
-
-## Technologies used
-
-- HTML was used to structure the content of the website.
-- CSS were used to design the layout of the website.
-- Bootstrap was used as a CSS framework to provide a grid structure and improve responsiveness.
-- Python and Django were used to build the backend review framework.
-- GitHub was used to host the repository and version control.
-- Heroku was the hosting platform.
 
 ## Testing
 - Please see [TESTING.md](TESTING.md) file for all testing.
@@ -343,7 +333,7 @@ There is significant potential for future enhancements in this project. Some of 
 - **PostgreSQL**: For database management.
 - **Unsplash & Chatgpt**: For providing high-quality images used in the application
 - **Font Awesome**: For icons used throughout the site.
-- **Code**: The CI walkthrough project 'I think therefore I blog' was used to refer back to to give help during the process. When stuck or needing some advice, my first check was with my walkthrough project and the documentation on the LMS learning portal of previous lessons.
+- **CI LMS**: For code related to sign-in, sign-out, register. I have used CI walkthrough project 'I think therefore I blog' for the code during the process. My first check was with my walkthrough projects when stuck.
 - **Bootstrap**: HTML & CSS uses [Bootstrap Version 5.3](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 
 
