@@ -333,7 +333,7 @@ There is significant potential for future enhancements in this project. Some of 
 - **PostgreSQL**: For database management.
 - **Unsplash & Chatgpt**: For providing high-quality images used in the application
 - **Font Awesome**: For icons used throughout the site.
-- **CI LMS**: For code related to sign-in, sign-out, register. I have used CI walkthrough project 'I think therefore I blog' for the code during the process. My first check was with my walkthrough projects when stuck.
+- **CI LMS**: For code related to sign-in, sign-out, register. I have used CI walkthrough project 'I think therefore I blog' for the support during the process. I customised the models, views and templates to create my own unique website.
 - **Bootstrap**: HTML & CSS uses [Bootstrap Version 5.3](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 
 
