@@ -36,6 +36,10 @@
 - The [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to validate the CSS.
 ![CSS validator screenshot](static/images/readme/testing/css-validator.png)
 
+### JS Validator
+- The [JShint](https://jshint.com/) was used to validate the comments.js file.
+![JS validator screenshot](static/images/readme/testing/)
+
 ### Python
 - The [CI Python Linter](https://pep8ci.herokuapp.com/) was used to validate the Python files.
 
