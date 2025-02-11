@@ -173,13 +173,13 @@ By organizing the database in this manner, Yummy Tummy ensures data integrity an
 ## Additional Features
 
 - **Home Page** 
-[Home page](static/images/readme/home.png)
+![Home page](static/images/readme/home.png)
 
 - **Chef Page**
-[Chef Page](static/images/readme/chef-page.png)
+![Chef Page](static/images/readme/chef-page.png)
 
 - **Dishes Page**
-[Dishes page](static/images/readme/dishes.png)
+![Dishes page](static/images/readme/dishes.png)
 
 
 ## Deployment
