@@ -286,6 +286,8 @@ There is significant potential for future enhancements in this project. Some of 
 - **PostgreSQL**: For database management.
 - **Unsplash & Chatgpt**: For providing high-quality images used in the application
 - **Font Awesome**: For icons used throughout the site.
+- **Code**: The CI walkthrough project 'I think therefore I blog' was used to refer back to to give help during the process. When stuck or needing some advice, my first check was with my walkthrough project and the documentation on the LMS learning portal of previous lessons.
+- **Bootstrap**: HTML & CSS uses [Bootstrap Version 5.3](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 
 
 ### Inspiration
