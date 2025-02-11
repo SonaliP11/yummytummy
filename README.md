@@ -42,7 +42,7 @@ I have used the MoSCoW technique to prioritize and complete my project requireme
 
 Here is the link to my [Project Board](https://github.com/users/SonaliP11/projects/8)
 
-#### MoSCoW Tecnhique
+#### MoSCoW Technique
 The MoSCoW technique is a prioritization method used to decide which features to implement in a project. It stands for:
 
 - **Must-Have**: These are the essential features that the project cannot do without. They are critical for the application's functionality and must be included in the initial release.

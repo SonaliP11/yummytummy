@@ -155,3 +155,8 @@ All files were edited according to the suggestions provided by the validator and
 #### Join us page
 ![join us page](static/images/readme/testing/lighthouse-mobile-joinus.png)
 
+## Browsers
+- I use Google Chrome as my browser so all screenshots above are from Google Chrome.
+
+- The site was tested on Microsoft Edge.
+- ![Microsoft Edge screenshot](static/images/readme/testing/microsoft-edge.png)
