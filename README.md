@@ -351,7 +351,7 @@ There is significant potential for future enhancements in this project. Some of 
 ### Acknowledgements
 
 - **Code Institute**: For providing the Full Stack Development Bootcamp course and resources that guided the development of this project.
-- **Mentors and Tutors**: Special thanks to my faciliator **Emmma Lamont** and tutors - **Spencer** and **Roo** for their invaluable guidance and support throughout the project.
+- **Mentors and Tutors**: Special thanks to my faciliator **Emma Lamont** and tutors - **Spencer** and **Roo** for their invaluable guidance and support throughout the project.
 - **Family and Friends**: For their encouragement and feedback, which helped shape the final product.
 - **Open Source Community**: For the various libraries and frameworks that made this project possible, including Django, Bootstrap, and PostgreSQL.
 - **GitHub Copilot**: For assisting in code suggestions, debugging, and documentation, significantly enhancing productivity and code quality.
