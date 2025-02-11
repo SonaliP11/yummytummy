@@ -38,7 +38,7 @@
 
 ### JS Validator
 - The [JShint](https://jshint.com/) was used to validate the comments.js file.
-![JS validator screenshot](static/images/readme/testing/)
+![JS validator screenshot](static/images/readme/testing/js-validator.png)
 
 ### Python
 - The [CI Python Linter](https://pep8ci.herokuapp.com/) was used to validate the Python files.
